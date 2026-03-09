@@ -120,8 +120,8 @@ export default function SvgSlider() {
     const fetchdata = async () => {
       try {
         const [internshipres, jobres] = await Promise.all([
-          axios.get("http://localhost:5000/api/internship"),
-          axios.get("http://localhost:5000/api/job"),
+          axios.get("https://internarea-jxck.onrender.com/api/internship"),
+          axios.get("https://internarea-jxck.onrender.com/api/job"),
         ]);
         setinternship(internshipres.data);
         setjob(jobres.data);
@@ -132,8 +132,6 @@ export default function SvgSlider() {
     fetchdata();
   }, []);
 
-  // http://localhost:5000
-  // http://localhost:5000
   
   const [selectedCategory, setSelectedCategory] = useState("");
   const filteredInternships = internships.filter(
