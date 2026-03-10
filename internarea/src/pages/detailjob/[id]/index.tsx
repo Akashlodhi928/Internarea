@@ -162,7 +162,7 @@ const index = () => {
         availability,
       };
       await axios.post(
-        "http://localhost:5000/api/application",
+        "https://internarea-jxck.onrender.com/api/application",
         applicationdata
       );
       toast.success("Application submit successfully");

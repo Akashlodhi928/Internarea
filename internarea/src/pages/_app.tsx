@@ -10,6 +10,7 @@ import { auth } from "@/firebase/firebase";
 import { login, logout } from "@/Feature/Userslice";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import "../i18n";
 
 export default function App({ Component, pageProps }: AppProps) {
   function AuthListener() {
